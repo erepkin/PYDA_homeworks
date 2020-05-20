@@ -1,0 +1,44 @@
+Git
+
+#коммит
+git commit 
+
+#создать новую ветку
+git branch [name]
+
+#перейти на ветку
+git checkout [name]
+
+#создать ветку и переключится на нее
+git checkout -b [name]
+
+#слияние веток, мердж
+git merge [name]
+
+#слияние веток, rebasing
+git rebase
+
+#ПЕРЕМЕШЕНИЕ ПО ДЕРЕВУ КОММИТОВ
+#перемешение через хэш
+git checkout [хэш коммита]
+#список хэш
+git log
+#первый родитель ветки master
+git checkout master^
+#прародитель master
+git checkout master^^
+#HEAD - голова
+git checkout c1
+git checkout HEAD^
+#перемешение на несколько шагов ~
+git checkout HEAD~4
+
+#прикрепить ветку к коммиту при помощи опции -f (forcing)
+git branch -f master HEAD~3
+
+#отменяет изменения в локальных репозиториях
+git reset HEAD~1
+
+#отменить изменения и поделиться отменёнными изменениями с остальными
+git revert HEAD
+
